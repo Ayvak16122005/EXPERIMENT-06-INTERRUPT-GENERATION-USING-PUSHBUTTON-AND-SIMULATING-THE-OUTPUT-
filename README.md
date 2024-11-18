@@ -1,5 +1,8 @@
 # EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT
-
+## Name :KAVYA T
+## Roll no : 2305003004
+## DEPARTMENT: B.TECH ARTIFICIAL INTELLEGENCE AND MACHINE LEARNING
+## Date of experiment :
 ### Aim:
 To Interface a push button and generate an interrupt , simulate it using an led and simuate it on  proteus 
 
@@ -90,13 +93,22 @@ https://engineeringxpert.com/wp-content/uploads/2022/04/26.png
 
 ## STM 32 CUBE PROGRAM :
 
-
+```python
+ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+ {
+ if((GPIO_Pin == GPIO_PIN_0)){
+ HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_5);
+ }
+ }
+```
 
 ## Output screen shots of proteus  :
- 
+ ![image](https://github.com/user-attachments/assets/af002f66-356e-41a4-8680-0fc52bb45163)
+
  
  ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
- 
+ ![image](https://github.com/user-attachments/assets/3ea1f4db-78ed-435c-9911-9bcba38a165c)
+
  
 ## Result :
 Interfacing a push button and interrupt genrateion is simulated using proteus 
